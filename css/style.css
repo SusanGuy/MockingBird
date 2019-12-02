@@ -1,4 +1,7 @@
-html, body { height: 100%; }
+html,
+body {
+    height: 100%;
+}
 
 body {
     color: #262626;
@@ -889,4 +892,8 @@ label {
 
 .error {
     color: red;
+}
+
+.color-matra {
+    color: #7b838a;
 }

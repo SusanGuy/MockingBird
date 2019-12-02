@@ -106,8 +106,9 @@
           </div>
 
           <div class="col-12 col-lg-7">
-            <form class="contact-form">
+            <form method="post"  name='contact' action="mail.php"  class="contact-form">
               <input
+                name="name"
                 id="contactName"
                 type="text"
                 placeholder="Name"
@@ -118,16 +119,30 @@
               <label for="contactName">Name</label>
 
               <input
+                name="email"
                 id="contactEmail"
                 type="email"
-                placeholder="Email"
+                placeholder="Email(xxxxx@go.olemiss.edu)"
                 required
                 minlength="5"
                 size="35"
               />
+
+              <input
+                name="subject"
+                id="contactSubject"
+                type="text"
+                placeholder="Subject"
+                required
+                minlength="5"
+                size="35"
+              />
+
               <label for="contactEmail">Email</label>
+
               <textarea
-                id='contactMessage'
+                name="message"
+                id="contactMessage"
                 rows="15"
                 cols="6"
                 required
@@ -136,8 +151,10 @@
                 placeholder="Messages"
               ></textarea>
               <label for="contactMessage">Message</label>
+               <div id="signupError" class="error"></div>
               <span>
                 <input
+
                   class="btn gradient-bg"
                   type="submit"
                   value="Contact us"
@@ -228,7 +245,7 @@
     <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-firestore.js "></script>
     <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-analytics.js "></script>
     <script src="js/fb.js "></script>
-    <script src="js/access.js "></script>
     <script src="js/logout.js "></script>
+    <script src='js/access.js'></script>
   </body>
 </html>

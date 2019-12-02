@@ -30,7 +30,7 @@
                             <a href="contact.html">Contact</a>
                         </li>
                         <li id="login">
-                            <a class="active" href="login.html">Login/Signup</a>
+                            <a class="active" href="login.html">Login</a>
                         </li>
                         <li id="logout" class="hidden">
                             <button class="btn-2 ">Logout</button>
@@ -48,98 +48,72 @@
                     <div class="card-body">
                         <h5 class="card-title text-center">Sign In</h5>
                         <form class="form-signin">
-                            <div class="form-label-group">
-                                <input type="email" id="loginEmail" class="form-control" placeholder="Email address" required autofocus />
-                                <label for="loginEmail">Email address</label>
-                            </div>
-
-                            <div class="form-label-group">
-                                <input type="password" id="loginPassword" class="form-control" placeholder="Password" required />
-                                <label for="loginPassword">Password</label>
-                            </div>
-
-                            <div id="loginError" class="error"></div>
-                            <button id="signin" class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">
-                  Sign in
-                </button>
-                            <br />
-                            <span class="already">Don't have an account?
-                  <span class="toRegister"
-                    ><a href="signup.html">Register</a></span
-                  ></span
-                >
-
-                <hr class="my-4" />
-                <button
-                  class="btn btn-lg btn-google btn-block text-uppercase"
-                  type="submit"
-                >
+                            <hr class="my-4" />
+                            <button id="google-signin" class="btn btn-lg btn-google btn-block text-uppercase" type="submit">
                   <i class="fab fa-google mr-2"></i> Sign in with Google
                 </button>
-              </form>
+                        </form>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
     </div>
 
     <footer class="footer">
-      <div class="footer-area">
-        <div class="container">
-          <div class="row section_gap">
-            <div class="col-lg-5 col-md-6 col-sm-6">
-              <div class="single-footer-widget tp_widgets">
-                <h4 class="footer_title">About Us</h4>
-                <p>
-                  At Mocking Bird we believe that all children in the world have
-                  the right to be cared for and the right to be protected.
-                </p>
-                <p>
-                  All rights reserved | © mockingbird.com | Designed by Susan
-                  Subedi
-                  <br /><br /><br />Current Date & Time:
-                  <span id="date" class="footer-date"></span>
-                            </p>
-                    </div>
-                </div>
-                <div class="offset-lg-1 col-lg-2 col-md-6 col-sm-6">
-                    <div class="single-footer-widget tp_widgets">
-                        <h4 class="footer_title">Quick Links</h4>
-                        <ul class="list">
-                            <li><a href="home.html">Home</a></li>
-                            <li><a href="events.html">Events</a></li>
-                            <li><a href="about.html">About</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="offset-lg-1 col-lg-3 col-md-6 col-sm-6">
-                    <div class="single-footer-widget tp_widgets">
-                        <h4 class="footer_title">Contact Us</h4>
-                        <div class="ml-5">
-                            <p class="sm-head">
-                                <span class="fa fa-location-arrow"></span> Head Office
-                            </p>
-                            <p>1802 Jackson Ave W, Oxford MS 38655</p>
-
-                            <p class="sm-head">
-                                <span class="fa fa-phone"></span> Phone Number
+        <div class="footer-area">
+            <div class="container">
+                <div class="row section_gap">
+                    <div class="col-lg-5 col-md-6 col-sm-6">
+                        <div class="single-footer-widget tp_widgets">
+                            <h4 class="footer_title">About Us</h4>
+                            <p>
+                                At Mocking Bird we believe that all children in the world have the right to be cared for and the right to be protected.
                             </p>
                             <p>
-                                +682 251 8746
+                                All rights reserved | © mockingbird.com | Designed by Susan Subedi
+                                <br /><br /><br />Current Date & Time:
+                                <span id="date" class="footer-date"></span>
                             </p>
+                        </div>
+                    </div>
+                    <div class="offset-lg-1 col-lg-2 col-md-6 col-sm-6">
+                        <div class="single-footer-widget tp_widgets">
+                            <h4 class="footer_title">Quick Links</h4>
+                            <ul class="list">
+                                <li><a href="home.html">Home</a></li>
+                                <li><a href="events.html">Events</a></li>
+                                <li><a href="about.html">About</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="offset-lg-1 col-lg-3 col-md-6 col-sm-6">
+                        <div class="single-footer-widget tp_widgets">
+                            <h4 class="footer_title">Contact Us</h4>
+                            <div class="ml-5">
+                                <p class="sm-head">
+                                    <span class="fa fa-location-arrow"></span> Head Office
+                                </p>
+                                <p>1802 Jackson Ave W, Oxford MS 38655</p>
 
-                            <p class="sm-head">
-                                <span class="fa fa-envelope"></span> Email
-                            </p>
-                            <p>
-                                info@mockingbird.com
-                            </p>
+                                <p class="sm-head">
+                                    <span class="fa fa-phone"></span> Phone Number
+                                </p>
+                                <p>
+                                    +682 251 8746
+                                </p>
+
+                                <p class="sm-head">
+                                    <span class="fa fa-envelope"></span> Email
+                                </p>
+                                <p>
+                                    info@mockingbird.com
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
@@ -150,7 +124,7 @@
     <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-firestore.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-analytics.js"></script>
     <script src="js/fb.js"></script>
-    <script src="js/signin.js"></script>
+    <script src="js/google.js"></script>
 </body>
 
 </html>
